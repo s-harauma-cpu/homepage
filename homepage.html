@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Edit | つくば市のプロフェッショナルPR動画制作</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Noto Serif JP & Noto Sans JP & Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;700;900&family=Noto+Serif+JP:wght@500;700;900&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'Noto Sans JP', 'sans-serif'],
+                        serif: ['Noto Serif JP', 'Georgia', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            navy: '#1E293B',       /* 落ち着いたシックなネイビー */
+                            navyDark: '#0F172A',   /* より深い引き締めネイビー */
+                            accent: '#D97706',     /* 落ち着いたゴールド調のアンバー */
+                            accentLight: '#F59E0B',/* 明るいアンバー */
+                            bgLight: '#FBFBFA',    /* 温かみのあるオフホワイト */
+                            beige: '#F4F4F0',      /* セクション背景用の上品なベージュ */
+                            gray: '#64748B',       /* 読みやすいグレー */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .premium-transition {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body class="bg-brand-bgLight text-slate-800 antialiased overflow-x-hidden">
+
+    <!-- ヘッダー（落ち着いた白ベース＋ソフトな影） -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm premium-transition">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-lg bg-brand-navy flex items-center justify-center text-white shadow-md shadow-brand-navy/10 group-hover:bg-brand-accent premium-transition">
+                    <i data-lucide="video" class="w-5 h-5"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-bold tracking-wider text-brand-navy block font-serif">You Edit</span>
+                    <span class="text-[9px] text-brand-accent tracking-widest font-semibold uppercase">Tsukuba Video Design</span>
+                </div>
+            </a>
+            
+            <!-- デスクトップナビゲーション -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="text-sm font-medium text-slate-600 hover:text-brand-accent premium-transition">コンセプト</a>
+                <a href="#features" class="text-sm font-medium text-slate-600 hover:text-brand-accent premium-transition">選ばれる強み</a>
+                <a href="#services" class="text-sm font-medium text-slate-600 hover:text-brand-accent premium-transition">制作メニュー</a>
+                <a href="#process" class="text-sm font-medium text-slate-600 hover:text-brand-accent premium-transition">制作の流れ</a>
+                <a href="#contact" class="inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider text-white bg-brand-navy hover:bg-brand-accent premium-transition shadow-md shadow-brand-navy/10">
+                    無料相談を予約
+                </a>
+            </nav>
+
+            <!-- モバイルメニューボタン -->
+            <button id="menu-btn" class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-50 border border-slate-200" aria-label="メニューを開く">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- モバイルドロワーメニュー -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-6 py-6 space-y-4 shadow-xl">
+            <a href="#about" class="block text-base font-medium text-slate-700 hover:text-brand-accent">コンセプト</a>
+            <a href="#features" class="block text-base font-medium text-slate-700 hover:text-brand-accent">選ばれる強み</a>
+            <a href="#services" class="block text-base font-medium text-slate-700 hover:text-brand-accent">制作メニュー</a>
+            <a href="#process" class="block text-base font-medium text-slate-700 hover:text-brand-accent">制作の流れ</a>
+            <a href="#contact" class="block w-full text-center py-3 rounded-lg text-sm font-bold tracking-wider text-white bg-brand-navy">
+                無料相談を予約
+            </a>
+        </div>
+    </header>
+
+    <!-- ヒーローセクション（美しい筑波山の自然と、機材の写真を重ねた、温かみのある大人のデザイン） -->
+    <section class="relative min-h-[90vh] flex items-center pt-24 pb-16 overflow-hidden">
+        <!-- 筑波山を想わせる、美しく落ち着いた山並みの背景画像（ソフトにぼかしとグラデーションを重ねる） -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=80" 
+                 alt="筑波山の山並みをイメージした美しい自然" 
+                 class="w-full h-full object-cover opacity-15">
+            <div class="absolute inset-0 bg-gradient-to-r from-brand-bgLight via-brand-bgLight/90 to-transparent"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- 左側：洗練されたキャッチコピー -->
+                <div class="lg:col-span-7 space-y-8">
+                    <div class="inline-flex items-center space-x-2 bg-amber-50 border border-amber-200 px-4 py-1.5 rounded-full">
+                        <span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span>
+                        <span class="text-xs font-bold tracking-widest text-brand-accent uppercase">茨城県つくば市拠点 ｜ 地域密着PR動画制作</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-serif tracking-tight leading-tight text-brand-navy">
+                        つくばの事業に、<br>
+                        <span class="text-brand-accent">「作って終わり」</span>にしない<br>
+                        心に届くPR動画を。
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-600 font-normal leading-relaxed max-w-2xl">
+                        チャンネル登録者数50万人超を誇る経済系YouTubeチャンネルでの豊富な撮影・編集経験。そこに事業開発の現場感覚を掛け合わせることで、ただ綺麗なだけではない「本当に伝わる」映像設計をご提案します。
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                        <a href="#contact" class="inline-flex items-center justify-center px-8 py-3.5 rounded-lg text-sm font-bold tracking-wider text-white bg-brand-navy hover:bg-brand-accent premium-transition shadow-lg shadow-brand-navy/15 hover:-translate-y-0.5 group">
+                            <span>無料相談を予約する</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1 premium-transition"></i>
+                        </a>
+                        <a href="#about" class="inline-flex items-center justify-center px-8 py-3.5 rounded-lg text-sm font-bold tracking-wider text-slate-700 border border-slate-200 bg-white hover:bg-slate-50 premium-transition shadow-sm">
+                            私たちの想いを見る
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 右側：洗練された実際の映像撮影をイメージするビジュアル素材 -->
+                <div class="lg:col-span-5 relative">
+                    <!-- 写真の重ね合わせによる、奥行きと上質感のあるギャラリー配置 -->
+                    <div class="relative space-y-4">
+                        <!-- メイン：カメラと自然を捉えた美しいカット -->
+                        <div class="rounded-2xl overflow-hidden shadow-xl border-4 border-white transform rotate-1 hover:rotate-0 premium-transition">
+                            <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80" 
+                                 alt="プロフェッショナルなカメラ機材" 
+                                 class="w-full h-64 object-cover">
+                        </div>
+                        <!-- サブ：対面での温かい打ち合わせ風景 -->
+                        <div class="absolute -bottom-8 -left-8 w-2/3 rounded-2xl overflow-hidden shadow-2xl border-4 border-white transform -rotate-3 hover:rotate-0 premium-transition hidden sm:block">
+                            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80" 
+                                 alt="対面での温かい打ち合わせ" 
+                                 class="w-full h-40 object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- コンセプト（About）セクション：優しく温かみのあるベージュトーン -->
+    <section id="about" class="py-24 bg-brand-beige border-y border-slate-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- 左：温もりを感じるビジュアル -->
+                <div class="space-y-4">
+                    <span class="text-brand-accent font-bold text-xs tracking-widest uppercase block">Concept</span>
+                    <h2 class="text-2xl sm:text-4xl font-extrabold font-serif text-brand-navy">動画制作と、地域への理解。</h2>
+                    <div class="w-12 h-1 bg-brand-accent rounded my-4"></div>
+                    
+                    <div class="rounded-2xl overflow-hidden shadow-lg border border-slate-200">
+                        <!-- カフェやオフィスでの親密で誠実な打ち合わせ風景 -->
+                        <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1000&q=80" 
+                             alt="地域の皆さまと一から共に作る姿勢" 
+                             class="w-full h-72 object-cover">
+                    </div>
+                </div>
+
+                <!-- 右：メッセージテキスト（読みやすく落ち着いたレイアウト） -->
+                <div class="space-y-6 lg:pl-6">
+                    <h3 class="text-xl sm:text-2xl font-bold text-slate-800 leading-snug">
+                        打ち合わせを重ねながら、目的に合った映像を作ります。
+                    </h3>
+                    
+                    <div class="space-y-4 text-slate-600 leading-relaxed font-light">
+                        <p>
+                            「動画を作りたいけれど、何から始めればいいかわからない」<br>
+                            「自社の本当の強みを、どう表現すれば伝わるのだろう」
+                        </p>
+                        <p>
+                            You Editは、そんなつくば市の事業者様のために立ち上がった、動画制作パートナーです。
+                        </p>
+                        <p>
+                            私たちは、ただカメラを回すだけの制作会社ではありません。つくばという地域に深く根ざし、対面でとことんお話を重ねることで、皆様のビジネスの魅力を「言葉以上」のストーリーとして映像に落とし込みます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 選ばれる強み（Features）セクション：白ベースのすっきりしたカードデザイン -->
+    <section id="features" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto space-y-3 mb-16">
+                <span class="text-brand-accent font-bold text-xs tracking-widest uppercase block">3 Core Strengths</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold font-serif text-brand-navy">You Edit が選ばれる3つの強み</h2>
+                <p class="text-slate-500 text-sm">あなたのビジネスに伴走する、私たちの確かな価値</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 強み1 -->
+                <div class="bg-white border border-slate-100 rounded-xl p-8 shadow-sm hover:shadow-md premium-transition">
+                    <div class="w-12 h-12 rounded-lg bg-amber-50 flex items-center justify-center text-brand-accent mb-6">
+                        <i data-lucide="award" class="w-6 h-6"></i>
+                    </div>
+                    <span class="text-xs font-bold text-brand-accent uppercase tracking-wider block mb-2">01 ｜ 制作 — 映像制作の経験</span>
+                    <h3 class="text-lg font-bold text-brand-navy mb-4">確かな映像制作実績</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed font-light">
+                        チャンネル登録者数50万人超の経済系YouTubeチャンネルでの撮影・ディレクション・編集を経験。最後まで離脱されず、人の心を惹きつけ続けるプロ仕様の構成技術を余すことなく投入します。
+                    </p>
+                </div>
+
+                <!-- 強み2 -->
+                <div class="bg-white border border-slate-100 rounded-xl p-8 shadow-sm hover:shadow-md premium-transition">
+                    <div class="w-12 h-12 rounded-lg bg-amber-50 flex items-center justify-center text-brand-accent mb-6">
+                        <i data-lucide="trending-up" class="w-6 h-6"></i>
+                    </div>
+                    <span class="text-xs font-bold text-brand-accent uppercase tracking-wider block mb-2">02 ｜ 視点 — 事業開発の現場経験</span>
+                    <h3 class="text-lg font-bold text-brand-navy mb-4">事業開発の現場視点</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed font-light">
+                        ただ単に「おしゃれな映像」を作るクリエイターではありません。「作って終わり」ではなく、どうすればビジネスの目標（集客・認知・採用など）を達成できるか、マーケティング視点を持って制作に臨みます。
+                    </p>
+                </div>
+
+                <!-- 強み3 -->
+                <div class="bg-white border border-slate-100 rounded-xl p-8 shadow-sm hover:shadow-md premium-transition">
+                    <div class="w-12 h-12 rounded-lg bg-amber-50 flex items-center justify-center text-brand-accent mb-6">
+                        <i data-lucide="map-pin" class="w-6 h-6"></i>
+                    </div>
+                    <span class="text-xs font-bold text-brand-accent uppercase tracking-wider block mb-2">03 ｜ 地域 — つくばを拠点に活動</span>
+                    <h3 class="text-lg font-bold text-brand-navy mb-4">つくば密着、対面重視</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed font-light">
+                        地域の特性や雰囲気をしっかりと理解した上で、対面での打ち合わせを何よりも大切にしています。すぐそばにいるからこその安心感と、スムーズで親身な機動力が最大の強みです。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- サービス・料金（Services）セクション：分かりやすく美しいプラン構成 -->
+    <section id="services" class="py-24 bg-brand-beige border-y border-slate-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto space-y-3 mb-16">
+                <span class="text-brand-accent font-bold text-xs tracking-widest uppercase block">Plans & Services</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold font-serif text-brand-navy">制作メニュー・料金</h2>
+                <p class="text-slate-500 text-sm">明確で分かりやすい、安心のワンプライス設定</p>
+            </div>
+
+            <!-- プレミアムでありながら落ち着いた料金プランカード -->
+            <div class="max-w-3xl mx-auto bg-white border border-slate-200 rounded-2xl shadow-lg overflow-hidden">
+                <div class="bg-brand-navy p-8 text-white flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                    <div>
+                        <span class="inline-block bg-brand-accent text-white text-[10px] font-bold px-3 py-1 rounded uppercase tracking-wider mb-2">不動産・医療・店舗向け</span>
+                        <h3 class="text-xl sm:text-2xl font-bold">スタンダードプラン</h3>
+                        <p class="text-slate-300 text-xs mt-1">信頼感と魅力をストレートに伝える、プロモーション動画の基本パッケージ</p>
+                    </div>
+                    <div class="text-left sm:text-right">
+                        <span class="text-[10px] text-slate-300 block uppercase font-semibold">通常価格（税抜）</span>
+                        <span class="text-2xl sm:text-3xl font-extrabold text-white">¥80,000 〜</span>
+                    </div>
+                </div>
+
+                <div class="p-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <!-- 左：パッケージ内容 -->
+                    <div class="space-y-4">
+                        <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest">含まれるサービス内容</h4>
+                        <ul class="space-y-3 text-sm text-slate-600 font-light">
+                            <li class="flex items-center space-x-2.5">
+                                <i data-lucide="check" class="w-4 h-4 text-brand-accent shrink-0"></i>
+                                <span>尺の目安：1分〜3分</span>
+                            </li>
+                            <li class="flex items-center space-x-2.5">
+                                <i data-lucide="check" class="w-4 h-4 text-brand-accent shrink-0"></i>
+                                <span>ナレーション・テロップ対応</span>
+                            </li>
+                            <li class="flex items-center space-x-2.5">
+                                <i data-lucide="check" class="w-4 h-4 text-brand-accent shrink-0"></i>
+                                <span>対面を重視した丁寧なヒアリング</span>
+                            </li>
+                            <li class="flex items-center space-x-2.5">
+                                <i data-lucide="check" class="w-4 h-4 text-brand-accent shrink-0"></i>
+                                <span>現地撮影・映像編集・BGM付与</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 右：注記 -->
+                    <div class="p-6 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-center space-y-3">
+                        <div class="flex items-center space-x-2 text-brand-accent">
+                            <i data-lucide="info" class="w-4 h-4"></i>
+                            <span class="text-xs font-bold">お見積もりについて</span>
+                        </div>
+                        <p class="text-xs text-slate-500 leading-relaxed font-light">
+                            ※つくば市外への出張費、特殊な機材（ドローン等）のご利用、または大幅な構成変更が必要な場合は、事前のお打ち合わせにて透明性の高いお見積もりをご提示いたします。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 制作の流れ（Process）セクション：丁寧さが一目で伝わるタイムライン -->
+    <section id="process" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto space-y-3 mb-20">
+                <span class="text-brand-accent font-bold text-xs tracking-widest uppercase block">Our Process</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold font-serif text-brand-navy">制作の流れ</h2>
+                <p class="text-slate-500 text-sm">打ち合わせから納品まで、丁寧に伴走します</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto relative">
+                <!-- 縦の静かなライン -->
+                <div class="absolute left-6 md:left-1/2 top-4 bottom-4 w-[1px] bg-slate-200 -translate-x-1/2 hidden md:block"></div>
+                <div class="absolute left-6 top-4 bottom-4 w-[1px] bg-slate-200 md:hidden"></div>
+
+                <!-- 各ステップ -->
+                <!-- 01 -->
+                <div class="relative flex flex-col md:flex-row items-start md:items-center justify-between mb-12">
+                    <div class="flex items-center md:w-[45%] md:justify-end mb-3 md:mb-0">
+                        <div class="bg-white p-5 rounded-xl border border-slate-100 md:text-right w-full md:w-auto max-w-sm shadow-sm">
+                            <h3 class="font-bold text-base text-brand-navy">01. 打ち合わせ（対面メイン）</h3>
+                            <p class="text-slate-500 text-xs mt-1.5 font-light">目的や動画のイメージ、ターゲット層を丁寧に整理します。初回は完全無料です。</p>
+                        </div>
+                    </div>
+                    <div class="absolute left-6 md:left-1/2 w-4 h-4 rounded-full bg-white border-2 border-brand-accent -translate-x-1/2 z-10 shadow-sm"></div>
+                    <div class="md:w-[45%] pl-12 md:pl-6">
+                        <span class="text-[10px] text-brand-accent font-bold uppercase tracking-wider">ヒアリング ｜ 無料</span>
+                    </div>
+                </div>
+
+                <!-- 02 -->
+                <div class="relative flex flex-col md:flex-row-reverse items-start md:items-center justify-between mb-12">
+                    <div class="flex items-center md:w-[45%] mb-3 md:mb-0">
+                        <div class="bg-white p-5 rounded-xl border border-slate-100 w-full md:w-auto max-w-sm shadow-sm">
+                            <h3 class="font-bold text-base text-brand-navy">02. 見積もり・ロケハン</h3>
+                            <p class="text-slate-500 text-xs mt-1.5 font-light">実際に撮影を行う現地を確認（ロケハン）させていただき、最適なプランと費用を事前にご提示します。</p>
+                        </div>
+                    </div>
+                    <div class="absolute left-6 md:left-1/2 w-4 h-4 rounded-full bg-white border-2 border-brand-accent -translate-x-1/2 z-10 shadow-sm"></div>
+                    <div class="md:w-[45%] pl-12 md:pl-0 md:text-right md:pr-6">
+                        <span class="text-[10px] text-brand-accent font-bold uppercase tracking-wider">現地確認・お見積もり</span>
+                    </div>
+                </div>
+
+                <!-- 03 -->
+                <div class="relative flex flex-col md:flex-row items-start md:items-center justify-between mb-12">
+                    <div class="flex items-center md:w-[45%] md:justify-end mb-3 md:mb-0">
+                        <div class="bg-white p-5 rounded-xl border border-slate-100 md:text-right w-full md:w-auto max-w-sm shadow-sm">
+                            <h3 class="font-bold text-base text-brand-navy">03. 絵コンテの確認</h3>
+                            <p class="text-slate-500 text-xs mt-1.5 font-light">撮影前に「どのようなカット展開にするか」を絵コンテで共有し、お互いの認識を合わせます。</p>
+                        </div>
+                    </div>
+                    <div class="absolute left-6 md:left-1/2 w-4 h-4 rounded-full bg-white border-2 border-brand-accent -translate-x-1/2 z-10 shadow-sm"></div>
+                    <div class="md:w-[45%] pl-12 md:pl-6">
+                        <span class="text-[10px] text-brand-accent font-bold uppercase tracking-wider">構成設計</span>
+                    </div>
+                </div>
+
+                <!-- 04 -->
+                <div class="relative flex flex-col md:flex-row-reverse items-start md:items-center justify-between mb-12">
+                    <div class="flex items-center md:w-[45%] mb-3 md:mb-0">
+                        <div class="bg-white p-5 rounded-xl border border-slate-100 w-full md:w-auto max-w-sm shadow-sm">
+                            <h3 class="font-bold text-base text-brand-navy">04. 撮影</h3>
+                            <p class="text-slate-500 text-xs mt-1.5 font-light">コンテに基づき、半日〜1日程度で撮影を行います。店舗、オフィス、または自然な魅力を引き出します。</p>
+                        </div>
+                    </div>
+                    <div class="absolute left-6 md:left-1/2 w-4 h-4 rounded-full bg-white border-2 border-brand-accent -translate-x-1/2 z-10 shadow-sm"></div>
+                    <div class="md:w-[45%] pl-12 md:pl-0 md:text-right md:pr-6">
+                        <span class="text-[10px] text-brand-accent font-bold uppercase tracking-wider">撮影日 ｜ 丁寧な対応</span>
+                    </div>
+                </div>
+
+                <!-- 05 -->
+                <div class="relative flex flex-col md:flex-row items-start md:items-center justify-between mb-12">
+                    <div class="flex items-center md:w-[45%] md:justify-end mb-3 md:mb-0">
+                        <div class="bg-white p-5 rounded-xl border border-slate-100 md:text-right w-full md:w-auto max-w-sm shadow-sm">
+                            <h3 class="font-bold text-base text-brand-navy">05. 編集・初稿・修正</h3>
+                            <p class="text-slate-500 text-xs mt-1.5 font-light">カット割り、テロップ入れ、色調整を行い初稿を完成させます。ご納得いくまで細かく修正いたします。</p>
+                        </div>
+                    </div>
+                    <div class="absolute left-6 md:left-1/2 w-4 h-4 rounded-full bg-white border-2 border-brand-accent -translate-x-1/2 z-10 shadow-sm"></div>
+                    <div class="md:w-[45%] pl-12 md:pl-6">
+                        <span class="text-[10px] text-brand-accent font-bold uppercase tracking-wider">ポストプロダクション</span>
+                    </div>
+                </div>
+
+                <!-- 06 -->
+                <div class="relative flex flex-col md:flex-row-reverse items-start md:items-center justify-between">
+                    <div class="flex items-center md:w-[45%] mb-3 md:mb-0">
+                        <div class="bg-white p-5 rounded-xl border border-slate-100 w-full md:w-auto max-w-sm shadow-sm">
+                            <h3 class="font-bold text-base text-brand-navy">06. 納品・アフターフォロー</h3>
+                            <p class="text-slate-500 text-xs mt-1.5 font-light">完成した映像データを納品します。納品後も、運用の相談や軽微な修正などお気軽にご相談ください。</p>
+                        </div>
+                    </div>
+                    <div class="absolute left-6 md:left-1/2 w-4 h-4 rounded-full bg-white border-2 border-brand-accent -translate-x-1/2 z-10 shadow-sm"></div>
+                    <div class="md:w-[45%] pl-12 md:pl-0 md:text-right md:pr-6">
+                        <span class="text-[10px] text-brand-accent font-bold uppercase tracking-wider">納品 ｜ 長いお付き合い</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- お問い合わせ（Contact）セクション：親しみやすく、かつ美しい信頼感のあるレイアウト -->
+    <section id="contact" class="py-24 bg-brand-beige border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto space-y-3 mb-16">
+                <span class="text-brand-accent font-bold text-xs tracking-widest uppercase block">Contact Us</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold font-serif text-brand-navy">お問い合わせ・初回相談</h2>
+                <p class="text-slate-500 text-sm">初回の打ち合わせ（30〜60分）は完全無料です</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-lg">
+                <!-- 左側：お気軽アプローチメッセージ -->
+                <div class="md:col-span-5 p-8 bg-brand-navy text-white flex flex-col justify-between space-y-8">
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-bold leading-relaxed font-serif">
+                            「何を作ればいいか<br>わからない」でも、<br>全く構いません。
+                        </h3>
+                        <p class="text-slate-300 text-xs leading-relaxed font-light">
+                            皆様のビジネスのお話を聞かせてください。魅力や強みを一緒に発見するお手伝いをいたします。
+                        </p>
+                    </div>
+
+                    <div class="space-y-4 pt-4 border-t border-white/10">
+                        <div class="flex items-center space-x-3 text-xs text-slate-300">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-brand-accent"></i>
+                            <span>拠点：茨城県つくば市（対面対応）</span>
+                        </div>
+                        <div class="flex items-center space-x-3 text-xs text-slate-300">
+                            <i data-lucide="clock" class="w-4 h-4 text-brand-accent"></i>
+                            <span>初回：30〜60分・完全無料</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 右側：シンプルなCTAコンタクトボタン群 -->
+                <div class="md:col-span-7 p-8 flex flex-col justify-center space-y-6">
+                    <h4 class="text-base font-bold text-slate-700">お好みの方法でご連絡ください</h4>
+                    
+                    <div class="space-y-4">
+                        <!-- MAIL -->
+                        <a href="mailto:info@you-edit.com" class="flex items-center justify-between p-4 rounded-xl bg-brand-navy hover:bg-brand-accent text-white font-bold premium-transition shadow-md group">
+                            <div class="flex items-center space-x-3">
+                                <i data-lucide="mail" class="w-5 h-5"></i>
+                                <span class="text-sm">メールでお問い合わせ</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <span class="text-xs font-mono font-light opacity-80">info@you-edit.com</span>
+                                <i data-lucide="chevron-right" class="w-4 h-4 group-hover:translate-x-1 premium-transition"></i>
+                            </div>
+                        </a>
+
+                        <!-- PHONE -->
+                        <a href="tel:07015930805" class="flex items-center justify-between p-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold premium-transition shadow-sm border border-slate-200 group">
+                            <div class="flex items-center space-x-3">
+                                <i data-lucide="phone" class="w-5 h-5 text-brand-navy"></i>
+                                <span class="text-sm">お電話でお問い合わせ</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <span class="text-xs font-mono font-light text-slate-600">070-1593-0805</span>
+                                <i data-lucide="chevron-right" class="w-4 h-4 group-hover:translate-x-1 premium-transition"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター：静かで落ち着いたデザイン -->
+    <footer class="bg-brand-navyDark text-slate-400 py-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 pb-8 border-b border-white/5">
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 rounded bg-brand-accent flex items-center justify-center text-white">
+                        <i data-lucide="video" class="w-4 h-4"></i>
+                    </div>
+                    <span class="text-lg font-bold font-serif text-white tracking-wider">You Edit</span>
+                </div>
+                <div class="flex flex-wrap justify-center gap-6 text-xs">
+                    <a href="#about" class="hover:text-white premium-transition">コンセプト</a>
+                    <a href="#features" class="hover:text-white premium-transition">選ばれる強み</a>
+                    <a href="#services" class="hover:text-white premium-transition">制作メニュー</a>
+                    <a href="#process" class="hover:text-white premium-transition">制作の流れ</a>
+                </div>
+            </div>
+            
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] font-light text-slate-500 w-full text-center sm:text-left">
+                <p>拠点：茨城県つくば市（対面打ち合わせ対応）</p>
+                <p class="font-mono">&copy; 2026 You edit. Tsukuba, Ibaraki. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- モバイルメニュー制御 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Lucideアイコンの初期化
+            lucide.createIcons();
+
+            // モバイルメニュー制御
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            menuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // メニューリンククリック時に閉じる
+            const links = mobileMenu.querySelectorAll('a');
+            links.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+```
+eof
