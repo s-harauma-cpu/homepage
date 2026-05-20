@@ -47,19 +47,20 @@
     <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm premium-transition">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="#" class="flex items-center space-x-3 group">
-                <div class="w-10 h-10 rounded-lg bg-brand-navy flex items-center justify-center text-white shadow-md shadow-brand-navy/10 group-hover:bg-brand-accent premium-transition">
-                    <i data-lucide="video" class="w-5 h-5"></i>
+                <!-- アップロードされたロゴを正しく表示 -->
+                <div class="w-12 h-12 flex items-center justify-center overflow-hidden">
+                    <img src="image_c8a610.png" alt="You Edit Logo" class="w-full h-full object-contain">
                 </div>
                 <div>
                     <span class="text-xl font-bold tracking-wider text-brand-navy block font-serif">You Edit</span>
-                    <span class="text-[9px] text-brand-accent tracking-widest font-semibold uppercase">Tsukuba Video Design</span>
                 </div>
             </a>
             
             <!-- デスクトップナビゲーション -->
             <nav class="hidden md:flex items-center space-x-8">
                 <a href="#about" class="text-sm font-medium text-slate-600 hover:text-brand-accent premium-transition">コンセプト</a>
-                <a href="#features" class="text-sm font-medium text-slate-600 hover:text-brand-accent premium-transition">選ばれる強み</a>
+                <a href="#features" class="text-sm font-medium text-slate-600 hover:text-brand-accent premium-transition">私たちの強み</a>
+                <a href="#portfolio" class="text-sm font-medium text-slate-600 hover:text-brand-accent premium-transition">制作実績</a>
                 <a href="#services" class="text-sm font-medium text-slate-600 hover:text-brand-accent premium-transition">制作メニュー</a>
                 <a href="#process" class="text-sm font-medium text-slate-600 hover:text-brand-accent premium-transition">制作の流れ</a>
                 <a href="#contact" class="inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider text-white bg-brand-navy hover:bg-brand-accent premium-transition shadow-md shadow-brand-navy/10">
@@ -77,6 +78,7 @@
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-6 py-6 space-y-4 shadow-xl">
             <a href="#about" class="block text-base font-medium text-slate-700 hover:text-brand-accent">コンセプト</a>
             <a href="#features" class="block text-base font-medium text-slate-700 hover:text-brand-accent">選ばれる強み</a>
+            <a href="#portfolio" class="block text-base font-medium text-slate-700 hover:text-brand-accent">制作実績</a>
             <a href="#services" class="block text-base font-medium text-slate-700 hover:text-brand-accent">制作メニュー</a>
             <a href="#process" class="block text-base font-medium text-slate-700 hover:text-brand-accent">制作の流れ</a>
             <a href="#contact" class="block w-full text-center py-3 rounded-lg text-sm font-bold tracking-wider text-white bg-brand-navy">
@@ -85,12 +87,12 @@
         </div>
     </header>
 
-    <!-- ヒーローセクション（美しい筑波山の自然と、機材の写真を重ねた、温かみのある大人のデザイン） -->
+    <!-- ヒーローセクション -->
     <section class="relative min-h-[90vh] flex items-center pt-24 pb-16 overflow-hidden">
-        <!-- 筑波山を想わせる、美しく落ち着いた山並みの背景画像（ソフトにぼかしとグラデーションを重ねる） -->
+        <!-- 筑波山を想わせる、美しく落ち着いた山並みの背景画像 -->
         <div class="absolute inset-0 z-0">
             <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=80" 
-                 alt="筑波山の山並みをイメージした美しい自然" 
+                 alt="筑波山の山並いをイメージした美しい自然" 
                  class="w-full h-full object-cover opacity-15">
             <div class="absolute inset-0 bg-gradient-to-r from-brand-bgLight via-brand-bgLight/90 to-transparent"></div>
         </div>
@@ -105,7 +107,6 @@
                     </div>
 
                     <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-serif tracking-tight leading-tight text-brand-navy">
-                        つくばの事業に、<br>
                         <span class="text-brand-accent">「作って終わり」</span>にしない<br>
                         心に届くPR動画を。
                     </h1>
@@ -125,17 +126,14 @@
                     </div>
                 </div>
 
-                <!-- 右側：洗練された実際の映像撮影をイメージするビジュアル素材 -->
+                <!-- 右側：映像撮影をイメージするビジュアル素材 -->
                 <div class="lg:col-span-5 relative">
-                    <!-- 写真の重ね合わせによる、奥行きと上質感のあるギャラリー配置 -->
                     <div class="relative space-y-4">
-                        <!-- メイン：カメラと自然を捉えた美しいカット -->
                         <div class="rounded-2xl overflow-hidden shadow-xl border-4 border-white transform rotate-1 hover:rotate-0 premium-transition">
                             <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80" 
                                  alt="プロフェッショナルなカメラ機材" 
                                  class="w-full h-64 object-cover">
                         </div>
-                        <!-- サブ：対面での温かい打ち合わせ風景 -->
                         <div class="absolute -bottom-8 -left-8 w-2/3 rounded-2xl overflow-hidden shadow-2xl border-4 border-white transform -rotate-3 hover:rotate-0 premium-transition hidden sm:block">
                             <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80" 
                                  alt="対面での温かい打ち合わせ" 
@@ -147,25 +145,53 @@
         </div>
     </section>
 
-    <!-- コンセプト（About）セクション：優しく温かみのあるベージュトーン -->
+    <!-- 制作実績（Portfolio）セクション -->
+    <section id="portfolio" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto space-y-3 mb-16">
+                <span class="text-brand-accent font-bold text-xs tracking-widest uppercase block">Portfolio</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold font-serif text-brand-navy">制作実績</h2>
+                <p class="text-slate-500 text-sm">ピックアップ動画をご紹介します</p>
+            </div>
+            
+            <!-- YouTube 埋め込みエリア -->
+            <div class="max-w-4xl mx-auto mb-12">
+                <div class="bg-brand-beige p-3 md:p-5 rounded-2xl border border-slate-200 shadow-sm">
+                    <div class="w-full aspect-video rounded-xl overflow-hidden bg-slate-900 shadow-inner">
+                        <!-- ユーザーが提示した最新のYouTube埋め込みコード（レスポンシブ対応） -->
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/Ghl7nvLUo7c?si=oTixkRPP-9FtXN2n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ボタン単体のスマートな導線 -->
+            <div class="text-center">
+                <a href="https://fori.io/YouEdit" target="_blank" class="inline-flex items-center justify-center px-8 py-3.5 rounded-lg text-sm font-bold tracking-wider text-white bg-brand-navy hover:bg-brand-accent premium-transition shadow-lg shadow-brand-navy/15 group">
+                    <i data-lucide="external-link" class="w-4 h-4 mr-2 group-hover:scale-110 premium-transition"></i>
+                    その他の制作事例を見る（fori.io）
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- コンセプト（About）セクション -->
     <section id="about" class="py-24 bg-brand-beige border-y border-slate-100">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <!-- 左：温もりを感じるビジュアル -->
+                <!-- 左：ビジュアル -->
                 <div class="space-y-4">
                     <span class="text-brand-accent font-bold text-xs tracking-widest uppercase block">Concept</span>
                     <h2 class="text-2xl sm:text-4xl font-extrabold font-serif text-brand-navy">動画制作と、地域への理解。</h2>
                     <div class="w-12 h-1 bg-brand-accent rounded my-4"></div>
                     
                     <div class="rounded-2xl overflow-hidden shadow-lg border border-slate-200">
-                        <!-- カフェやオフィスでの親密で誠実な打ち合わせ風景 -->
                         <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1000&q=80" 
                              alt="地域の皆さまと一から共に作る姿勢" 
                              class="w-full h-72 object-cover">
                     </div>
                 </div>
 
-                <!-- 右：メッセージテキスト（読みやすく落ち着いたレイアウト） -->
+                <!-- 右：メッセージテキスト -->
                 <div class="space-y-6 lg:pl-6">
                     <h3 class="text-xl sm:text-2xl font-bold text-slate-800 leading-snug">
                         打ち合わせを重ねながら、目的に合った映像を作ります。
@@ -188,12 +214,12 @@
         </div>
     </section>
 
-    <!-- 選ばれる強み（Features）セクション：白ベースのすっきりしたカードデザイン -->
+    <!-- 選ばれる強み（Features）セクション -->
     <section id="features" class="py-24">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-2xl mx-auto space-y-3 mb-16">
                 <span class="text-brand-accent font-bold text-xs tracking-widest uppercase block">3 Core Strengths</span>
-                <h2 class="text-2xl sm:text-4xl font-extrabold font-serif text-brand-navy">You Edit が選ばれる3つの強み</h2>
+                <h2 class="text-2xl sm:text-4xl font-extrabold font-serif text-brand-navy">You Edit の3つの強み</h2>
                 <p class="text-slate-500 text-sm">あなたのビジネスに伴走する、私たちの確かな価値</p>
             </div>
 
@@ -203,7 +229,7 @@
                     <div class="w-12 h-12 rounded-lg bg-amber-50 flex items-center justify-center text-brand-accent mb-6">
                         <i data-lucide="award" class="w-6 h-6"></i>
                     </div>
-                    <span class="text-xs font-bold text-brand-accent uppercase tracking-wider block mb-2">01 ｜ 制作 — 映像制作の経験</span>
+                    <span class="text-xs font-bold text-brand-accent uppercase tracking-wider block mb-2">01 ｜ 制作 — 映像制作 of 経験</span>
                     <h3 class="text-lg font-bold text-brand-navy mb-4">確かな映像制作実績</h3>
                     <p class="text-slate-600 text-sm leading-relaxed font-light">
                         チャンネル登録者数50万人超の経済系YouTubeチャンネルでの撮影・ディレクション・編集を経験。最後まで離脱されず、人の心を惹きつけ続けるプロ仕様の構成技術を余すことなく投入します。
@@ -218,7 +244,7 @@
                     <span class="text-xs font-bold text-brand-accent uppercase tracking-wider block mb-2">02 ｜ 視点 — 事業開発の現場経験</span>
                     <h3 class="text-lg font-bold text-brand-navy mb-4">事業開発の現場視点</h3>
                     <p class="text-slate-600 text-sm leading-relaxed font-light">
-                        ただ単に「おしゃれな映像」を作るクリエイターではありません。「作って終わり」ではなく、どうすればビジネスの目標（集客・認知・採用など）を達成できるか、マーケティング視点を持って制作に臨みます。
+                        ただ単に「おしゃれな映像」を作るクリエイターではありません。「作って終わり」ではなく、どうすればビジネスの目標（集客・認知・採用など）を達成できるか、どう伝えるかを意識した視点を持って制作に臨みます。
                     </p>
                 </div>
 
@@ -237,7 +263,7 @@
         </div>
     </section>
 
-    <!-- サービス・料金（Services）セクション：分かりやすく美しいプラン構成 -->
+    <!-- サービス・料金（Services）セクション -->
     <section id="services" class="py-24 bg-brand-beige border-y border-slate-100">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-2xl mx-auto space-y-3 mb-16">
@@ -246,7 +272,6 @@
                 <p class="text-slate-500 text-sm">明確で分かりやすい、安心のワンプライス設定</p>
             </div>
 
-            <!-- プレミアムでありながら落ち着いた料金プランカード -->
             <div class="max-w-3xl mx-auto bg-white border border-slate-200 rounded-2xl shadow-lg overflow-hidden">
                 <div class="bg-brand-navy p-8 text-white flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                     <div>
@@ -299,7 +324,7 @@
         </div>
     </section>
 
-    <!-- 制作の流れ（Process）セクション：丁寧さが一目で伝わるタイムライン -->
+    <!-- 制作の流れ（Process）セクション -->
     <section id="process" class="py-24">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-2xl mx-auto space-y-3 mb-20">
@@ -401,7 +426,7 @@
         </div>
     </section>
 
-    <!-- お問い合わせ（Contact）セクション：親しみやすく、かつ美しい信頼感のあるレイアウト -->
+    <!-- お問い合わせ（Contact）セクション -->
     <section id="contact" class="py-24 bg-brand-beige border-t border-slate-100">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-2xl mx-auto space-y-3 mb-16">
@@ -434,7 +459,7 @@
                     </div>
                 </div>
 
-                <!-- 右側：シンプルなCTAコンタクトボタン群 -->
+                <!-- 右側：連絡方法 -->
                 <div class="md:col-span-7 p-8 flex flex-col justify-center space-y-6">
                     <h4 class="text-base font-bold text-slate-700">お好みの方法でご連絡ください</h4>
                     
@@ -468,19 +493,21 @@
         </div>
     </section>
 
-    <!-- フッター：静かで落ち着いたデザイン -->
+    <!-- フッター -->
     <footer class="bg-brand-navyDark text-slate-400 py-12 border-t border-white/5">
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-center gap-6 pb-8 border-b border-white/5">
                 <div class="flex items-center space-x-3">
-                    <div class="w-8 h-8 rounded bg-brand-accent flex items-center justify-center text-white">
-                        <i data-lucide="video" class="w-4 h-4"></i>
+                    <!-- フッターロゴも正しく差し替え -->
+                    <div class="w-10 h-10 flex items-center justify-center overflow-hidden bg-white/10 rounded p-1">
+                        <img src="image_c8a610.png" alt="You Edit Logo" class="w-full h-full object-contain">
                     </div>
                     <span class="text-lg font-bold font-serif text-white tracking-wider">You Edit</span>
                 </div>
                 <div class="flex flex-wrap justify-center gap-6 text-xs">
                     <a href="#about" class="hover:text-white premium-transition">コンセプト</a>
-                    <a href="#features" class="hover:text-white premium-transition">選ばれる強み</a>
+                    <a href="#features" class="hover:text-white premium-transition">私たちの強み</a>
+                    <a href="#portfolio" class="hover:text-white premium-transition">制作実績</a>
                     <a href="#services" class="hover:text-white premium-transition">制作メニュー</a>
                     <a href="#process" class="hover:text-white premium-transition">制作の流れ</a>
                 </div>
@@ -518,5 +545,3 @@
     </script>
 </body>
 </html>
-```
-eof
