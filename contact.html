@@ -124,8 +124,9 @@
                 </div>
 
                 <div class="lg:col-span-7">
-                    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-lg space-y-6">
+                    <form name="contact" method="POST" action="thanks.html" data-netlify="true" netlify-honeypot="bot-field" class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-lg space-y-6">
                         <input type="hidden" name="form-name" value="contact">
+                        <input type="hidden" name="subject" data-remove-prefix value="You Editへの新規問い合わせ: %{submissionId}">
                         <p class="hidden">
                             <label>入力しないでください <input name="bot-field"></label>
                         </p>
