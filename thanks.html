@@ -23,36 +23,97 @@
                             navy: '#1E293B',
                             navyDark: '#0F172A',
                             accent: '#D97706',
+                            accentLight: '#F59E0B',
                             bgLight: '#FBFBFA',
                             beige: '#F4F4F0',
+                            gray: '#64748B',
                         }
                     }
                 }
             }
         }
     </script>
+    <style>
+        .premium-transition {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
 </head>
-<body class="min-h-screen bg-brand-bgLight text-slate-800 antialiased">
-    <main class="min-h-screen flex items-center justify-center px-6 py-16">
-        <section class="w-full max-w-2xl rounded-2xl border border-slate-200 bg-white p-8 sm:p-12 text-center shadow-lg">
-            <div class="mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-amber-50 text-brand-accent">
-                <i data-lucide="check" class="h-7 w-7"></i>
+<body class="min-h-screen bg-brand-bgLight text-slate-800 antialiased overflow-x-hidden">
+    <header class="border-b border-slate-100 bg-white/90 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-3">
+                <div class="w-12 h-12 flex items-center justify-center overflow-hidden">
+                    <img src="image_c8a610.png" alt="You Edit Logo" class="w-full h-full object-contain">
+                </div>
+                <span class="text-xl font-bold tracking-wider text-brand-navy block font-serif">You Edit</span>
+            </a>
+            <a href="index.html" class="hidden sm:inline-flex items-center text-sm font-bold text-slate-600 hover:text-brand-accent premium-transition">
+                <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
+                トップへ戻る
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative overflow-hidden py-16 sm:py-24">
+            <div class="absolute inset-0 -z-10">
+                <img src="34233223_s.jpg" alt="" class="w-full h-full object-cover opacity-10">
+                <div class="absolute inset-0 bg-gradient-to-b from-brand-bgLight via-brand-bgLight/95 to-brand-beige"></div>
             </div>
-            <p class="text-xs font-bold uppercase tracking-widest text-brand-accent">Thank You</p>
-            <h1 class="mt-3 text-3xl sm:text-4xl font-extrabold font-serif text-brand-navy">送信が完了しました</h1>
-            <p class="mt-5 text-sm sm:text-base leading-relaxed text-slate-600">
-                お問い合わせありがとうございます。内容を確認後、通常1〜2営業日以内にご連絡します。
-            </p>
-            <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-                <a href="index.html" class="inline-flex items-center justify-center rounded-xl bg-brand-navy px-7 py-3.5 text-sm font-bold tracking-wider text-white transition hover:bg-brand-accent">
-                    トップページへ戻る
-                </a>
-                <a href="mailto:info@you-edit.com" class="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-7 py-3.5 text-sm font-bold tracking-wider text-slate-700 transition hover:bg-slate-50">
-                    メールで追加連絡する
-                </a>
+
+            <div class="max-w-5xl mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <div class="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-amber-50 text-brand-accent ring-8 ring-white shadow-sm">
+                        <i data-lucide="check" class="h-8 w-8"></i>
+                    </div>
+                    <h1 class="mt-4 text-3xl sm:text-5xl font-extrabold font-serif leading-tight text-brand-navy">
+                        お問い合わせありがとうございます
+                    </h1>
+                    <p class="mt-5 text-base sm:text-lg leading-relaxed text-slate-600">
+                        内容を確認し、通常1〜2営業日以内にご連絡します。
+                    </p>
+                </div>
+
+                <div class="mt-12 rounded-2xl bg-brand-navy p-6 sm:p-8 text-white shadow-xl">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                        <div class="lg:col-span-7">
+                            <p class="text-base sm:text-lg leading-relaxed text-slate-200">
+                                物件ページ、参考動画、撮影したい場所の写真など、追加で共有したい内容があれば、下記メールアドレス宛にお送りください。
+                            </p>
+                        </div>
+                        <div class="lg:col-span-5 flex flex-col gap-3">
+                            <a href="mailto:info@you-edit.com" class="inline-flex items-center justify-center rounded-xl bg-white px-6 py-4 text-sm font-bold tracking-wider text-brand-navy hover:bg-amber-50 premium-transition">
+                                <i data-lucide="mail" class="w-4 h-4 mr-2"></i>
+                                info@you-edit.com
+                            </a>
+                            <a href="index.html#portfolio" class="inline-flex items-center justify-center rounded-xl border border-white/20 px-6 py-4 text-sm font-bold tracking-wider text-white hover:bg-white/10 premium-transition">
+                                <i data-lucide="play-circle" class="w-4 h-4 mr-2"></i>
+                                制作実績を見る
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="index.html" class="inline-flex items-center justify-center rounded-xl bg-brand-navy px-8 py-4 text-sm font-bold tracking-wider text-white shadow-lg shadow-brand-navy/15 hover:bg-brand-accent hover:-translate-y-0.5 premium-transition">
+                        トップページへ戻る
+                    </a>
+                    <a href="contact.html" class="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-8 py-4 text-sm font-bold tracking-wider text-slate-700 shadow-sm hover:bg-slate-50 premium-transition">
+                        もう一度送信する
+                    </a>
+                </div>
             </div>
         </section>
     </main>
+
+    <footer class="bg-brand-navyDark text-slate-400 py-8 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] font-light text-center sm:text-left">
+            <p>拠点：茨城県つくば市（対面打ち合わせ対応）</p>
+            <p class="font-mono">&copy; 2026 You edit. Tsukuba, Ibaraki. All rights reserved.</p>
+        </div>
+    </footer>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             lucide.createIcons();
