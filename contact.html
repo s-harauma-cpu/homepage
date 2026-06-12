@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ | You Edit</title>
+    <meta name="description" content="You Editへのお問い合わせ・無料相談フォーム。つくば市周辺の不動産物件PR動画、ショート動画、店舗PR動画のご相談を受け付けています。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;700;900&family=Noto+Serif+JP:wght@500;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'Noto Sans JP', 'sans-serif'],
+                        serif: ['Noto Serif JP', 'Georgia', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            navy: '#1E293B',
+                            navyDark: '#0F172A',
+                            accent: '#D97706',
+                            accentLight: '#F59E0B',
+                            bgLight: '#FBFBFA',
+                            beige: '#F4F4F0',
+                            gray: '#64748B',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .premium-transition {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body class="bg-brand-bgLight text-slate-800 antialiased overflow-x-hidden">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm premium-transition">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-3 group">
+                <div class="w-12 h-12 flex items-center justify-center overflow-hidden">
+                    <img src="image_c8a610.png" alt="You Edit Logo" class="w-full h-full object-contain">
+                </div>
+                <span class="text-xl font-bold tracking-wider text-brand-navy block font-serif">You Edit</span>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="index.html#about" class="text-sm font-medium text-slate-600 hover:text-brand-accent premium-transition">コンセプト</a>
+                <a href="index.html#features" class="text-sm font-medium text-slate-600 hover:text-brand-accent premium-transition">私たちの強み</a>
+                <a href="index.html#portfolio" class="text-sm font-medium text-slate-600 hover:text-brand-accent premium-transition">制作実績</a>
+                <a href="index.html#services" class="text-sm font-medium text-slate-600 hover:text-brand-accent premium-transition">制作メニュー</a>
+                <a href="index.html#process" class="text-sm font-medium text-slate-600 hover:text-brand-accent premium-transition">制作の流れ</a>
+                <a href="contact.html" class="inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider text-white bg-brand-navy hover:bg-brand-accent premium-transition shadow-md shadow-brand-navy/10">
+                    無料相談を予約
+                </a>
+            </nav>
+
+            <button id="menu-btn" class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-50 border border-slate-200" aria-label="メニューを開く">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-6 py-6 space-y-4 shadow-xl">
+            <a href="index.html#about" class="block text-base font-medium text-slate-700 hover:text-brand-accent">コンセプト</a>
+            <a href="index.html#features" class="block text-base font-medium text-slate-700 hover:text-brand-accent">選ばれる強み</a>
+            <a href="index.html#portfolio" class="block text-base font-medium text-slate-700 hover:text-brand-accent">制作実績</a>
+            <a href="index.html#services" class="block text-base font-medium text-slate-700 hover:text-brand-accent">制作メニュー</a>
+            <a href="index.html#process" class="block text-base font-medium text-slate-700 hover:text-brand-accent">制作の流れ</a>
+            <a href="contact.html" class="block w-full text-center py-3 rounded-lg text-sm font-bold tracking-wider text-white bg-brand-navy">無料相談を予約</a>
+        </div>
+    </header>
+
+    <main class="pt-28 pb-20">
+        <section class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                <div class="lg:col-span-5 space-y-8">
+                    <div class="space-y-4">
+                        <span class="text-brand-accent font-bold text-xs tracking-widest uppercase block">Contact</span>
+                        <h1 class="text-3xl sm:text-5xl font-extrabold font-serif tracking-tight leading-tight text-brand-navy">
+                            無料相談・お問い合わせ
+                        </h1>
+                        <p class="text-base sm:text-lg leading-relaxed text-slate-600">
+                            物件PR動画、SNS用ショート動画、店舗・採用PRなど、目的が固まっていない段階でもご相談ください。初回の打ち合わせは30〜60分、無料で対応します。
+                        </p>
+                    </div>
+
+                    <div class="bg-brand-navy text-white rounded-2xl p-8 shadow-lg">
+                        <h2 class="text-xl font-bold font-serif">ご相談しやすい内容</h2>
+                        <div class="mt-6 space-y-4 text-sm text-slate-200">
+                            <div class="flex gap-3">
+                                <i data-lucide="home" class="w-5 h-5 text-brand-accent shrink-0"></i>
+                                <span>中古戸建・中古マンションの物件紹介動画</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <i data-lucide="smartphone" class="w-5 h-5 text-brand-accent shrink-0"></i>
+                                <span>Instagram・YouTube Shorts向けの縦型動画</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <i data-lucide="users" class="w-5 h-5 text-brand-accent shrink-0"></i>
+                                <span>店舗、企業、採用向けのPR動画</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <i data-lucide="map-pin" class="w-5 h-5 text-brand-accent shrink-0"></i>
+                                <span>つくば市周辺での対面打ち合わせ・撮影相談</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <a href="mailto:info@you-edit.com" class="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-4 text-sm font-bold text-brand-navy hover:border-brand-accent premium-transition">
+                            <i data-lucide="mail" class="w-5 h-5 text-brand-accent"></i>
+                            info@you-edit.com
+                        </a>
+                        <a href="tel:07015930805" class="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-4 text-sm font-bold text-brand-navy hover:border-brand-accent premium-transition">
+                            <i data-lucide="phone" class="w-5 h-5 text-brand-accent"></i>
+                            070-1593-0805
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-lg space-y-6">
+                        <input type="hidden" name="form-name" value="contact">
+                        <p class="hidden">
+                            <label>入力しないでください <input name="bot-field"></label>
+                        </p>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <label class="block">
+                                <span class="text-sm font-bold text-slate-700">会社名</span>
+                                <input type="text" name="company" autocomplete="organization" class="mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none focus:border-brand-accent focus:ring-2 focus:ring-amber-100" placeholder="株式会社〇〇">
+                            </label>
+
+                            <label class="block">
+                                <span class="text-sm font-bold text-slate-700">お名前 <span class="text-brand-accent">必須</span></span>
+                                <input type="text" name="name" autocomplete="name" required class="mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none focus:border-brand-accent focus:ring-2 focus:ring-amber-100" placeholder="山田 太郎">
+                            </label>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <label class="block">
+                                <span class="text-sm font-bold text-slate-700">メールアドレス <span class="text-brand-accent">必須</span></span>
+                                <input type="email" name="email" autocomplete="email" required class="mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none focus:border-brand-accent focus:ring-2 focus:ring-amber-100" placeholder="info@example.com">
+                            </label>
+
+                            <label class="block">
+                                <span class="text-sm font-bold text-slate-700">電話番号</span>
+                                <input type="tel" name="phone" autocomplete="tel" class="mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none focus:border-brand-accent focus:ring-2 focus:ring-amber-100" placeholder="090-0000-0000">
+                            </label>
+                        </div>
+
+                        <label class="block">
+                            <span class="text-sm font-bold text-slate-700">相談したい内容</span>
+                            <select name="service" class="mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none focus:border-brand-accent focus:ring-2 focus:ring-amber-100">
+                                <option value="">選択してください</option>
+                                <option value="中古物件の紹介動画">中古物件の紹介動画</option>
+                                <option value="SNS用ショート動画">SNS用ショート動画</option>
+                                <option value="店舗・企業PR動画">店舗・企業PR動画</option>
+                                <option value="採用向け動画">採用向け動画</option>
+                                <option value="その他">その他</option>
+                            </select>
+                        </label>
+
+                        <label class="block">
+                            <span class="text-sm font-bold text-slate-700">お問い合わせ内容 <span class="text-brand-accent">必須</span></span>
+                            <textarea name="message" rows="7" required class="mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm leading-relaxed outline-none focus:border-brand-accent focus:ring-2 focus:ring-amber-100" placeholder="制作したい動画の内容、対象物件、希望時期、ご予算感などがあればご記入ください。"></textarea>
+                        </label>
+
+                        <div class="flex flex-col sm:flex-row sm:items-center gap-4 justify-between pt-2">
+                            <p class="text-xs leading-relaxed text-slate-500">
+                                内容を確認後、通常1〜2営業日以内にご連絡します。
+                            </p>
+                            <button type="submit" class="inline-flex items-center justify-center px-8 py-4 rounded-xl text-sm font-bold tracking-wider text-white bg-brand-navy hover:bg-brand-accent premium-transition shadow-lg shadow-brand-navy/15 hover:-translate-y-0.5 group">
+                                <span>送信する</span>
+                                <i data-lucide="send" class="w-4 h-4 ml-2 group-hover:translate-x-1 premium-transition"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-brand-navyDark text-slate-400 py-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 pb-8 border-b border-white/5">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 flex items-center justify-center overflow-hidden bg-white/10 rounded p-1">
+                        <img src="image_c8a610.png" alt="You Edit Logo" class="w-full h-full object-contain">
+                    </div>
+                    <span class="text-lg font-bold font-serif text-white tracking-wider">You Edit</span>
+                </div>
+                <div class="flex flex-wrap justify-center gap-6 text-xs">
+                    <a href="index.html#about" class="hover:text-white premium-transition">コンセプト</a>
+                    <a href="index.html#features" class="hover:text-white premium-transition">私たちの強み</a>
+                    <a href="index.html#portfolio" class="hover:text-white premium-transition">制作実績</a>
+                    <a href="index.html#services" class="hover:text-white premium-transition">制作メニュー</a>
+                    <a href="index.html#process" class="hover:text-white premium-transition">制作の流れ</a>
+                    <a href="contact.html" class="hover:text-white premium-transition">お問い合わせ</a>
+                </div>
+            </div>
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] font-light text-slate-500 w-full text-center sm:text-left">
+                <p>拠点：茨城県つくば市（対面打ち合わせ対応）</p>
+                <p class="font-mono">&copy; 2026 You edit. Tsukuba, Ibaraki. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            lucide.createIcons();
+
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            menuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
